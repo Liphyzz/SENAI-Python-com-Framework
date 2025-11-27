@@ -1,0 +1,22 @@
+@startuml Produto
+
+class Produto {
+    - nome: str
+    - preco: float
+    - quantidade: int
+
+    + operacao(): str
+}
+
+class Software {
+    - licenca: str
+}
+
+class Hardware {
+    - garantia: int
+}
+
+left to right direction
+
+Produto <--(Software, Hardware)
+@enduml

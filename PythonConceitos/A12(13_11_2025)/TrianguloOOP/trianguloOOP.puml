@@ -1,0 +1,10 @@
+@startuml trianguloOOP
+
+class Triangulo{
+    + a: int
+    + b: int
+    + c: int
+    + area(): float
+}
+
+@enduml

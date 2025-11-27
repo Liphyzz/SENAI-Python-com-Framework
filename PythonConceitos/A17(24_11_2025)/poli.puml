@@ -1,0 +1,31 @@
+@startuml
+
+class Trabalhador{
+    -nome: str
+    -jornada: float
+    # get nome() : str
+    # set nome() : str
+    # get jornada() : float
+    # set jornada(jornada: float) : float
+    +__init__(nome: str, jornada: float)
+    + pagamento() : float
+}
+
+class EmpregadoSenai{
+    - valor_hora: float
+    # get valor_hora() : float
+    # set valor_hora(valor_hora: float) : float
+    + __init__(nome: str, jornada: float, valor_hora: float)
+    + pagamento() : float
+
+}
+class Tercerizado{
+    - adicional: float
+    + __init__(nome: str, jornada: float, valor_hora: float, adicional: float)
+    + pagamento() : float
+}
+Trabalhador <|-- EmpregadoSenai
+EmpregadoSenai<|-- Tercerizado
+ 
+
+@enduml
