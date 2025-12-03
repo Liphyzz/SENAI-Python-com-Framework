@@ -1,0 +1,12 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+{% include "parciais/head.html" %}
+{% include "parciais/cabecalho.html" %}
+
+<body>
+    {% include "parciais/buscador.html" %}
+    {% block conteudo %}<!-- Conteudo da pagina -->{% endblock conteudo %}
+    {% include "parciais/rodape.html" %}
+</body>
+
+</html>

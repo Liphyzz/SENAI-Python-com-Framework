@@ -1,16 +1,8 @@
-<!DOCTYPE html>
-<html lang="pt-BR">
-{% include "parciais/head.html" %}
-{% include "parciais/cabecalho.html" %}
-
-<body>
-    {% include "parciais/buscador.html" %}
-    <main class="principal-conteudo-container">
+{% extends "base/basePagina.html" %}
+{% block conteudo %}
+<main class="principal-conteudo-container">
+    {% for receita in receitas %}
         {% include "parciais/card.html" %}
-        {% include "parciais/card.html" %}
-        {% include "parciais/card.html" %} 
-    </main>
-    {% include "parciais/rodape.html" %}
-</body>
-
-</html>
+    {% endfor %}
+</main>
+{% endblock conteudo %}
