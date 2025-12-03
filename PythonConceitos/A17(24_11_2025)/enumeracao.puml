@@ -1,4 +1,4 @@
-@startuml EnumeracaoUML
+@startuml EnumeracaoPUML
 enum Estados_Pedido
 {
     Pagamento_Pendente = 0
